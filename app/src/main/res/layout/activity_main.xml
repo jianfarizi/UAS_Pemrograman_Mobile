@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="Ular,Ikan &amp; Burung "
+        android:text="@string/app_name"
         android:textColor="@color/black"
         android:textSize="29sp"
         android:textStyle="bold" />
@@ -62,7 +62,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="(Tekan gambar untuk membuka galeri)"
+        android:text="@string/Klik"
         android:textStyle="italic"
         android:layout_marginBottom="32dp"
         />
@@ -74,7 +74,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tekan Gambar untuk melihat biodata pembuat "/>
+        android:text="@string/biodata"/>
 
     <ImageButton
         android:id="@+id/btn_buka_profile"

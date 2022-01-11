@@ -15,54 +15,54 @@ public class DataProvider {
 
     private static List<Harimau> initDataUlar(Context ctx) {
         List<Harimau> harimaus = new ArrayList<>();
-        harimaus.add(new Harimau("Harimau Siberia", "Siberia",
-                "Disebut juga Harimau Amur. Selain di siberia Mereka juga Hidup di tingkok Dan Korut", R.drawable.siberia));
-        harimaus.add(new Harimau("Harimau India", "India",
-                "Harimau India juga disebut sebagai harimau Bengal yang terancam punah karena perburuan ", R.drawable.india));
-        harimaus.add(new Harimau("Harimau Cina Selatan", "Cina selatan",
-                "Harimau ini termasuk dalam subspesies harimau terkecil kedua didunia", R.drawable.harimaucinaselatan));
-        harimaus.add(new Harimau("Harimau Indocina ", "Thailadn,vietnam, dan kawasan asia tenggara",
-                "harimau yang hidup dikawasna asi tenggara ini juga terdapat di tiongkok selatan ", R.drawable.indocian));
-        harimaus.add(new Harimau("Harimau Malaya", "Semenanjung Malaya",
-                "merekaduku dikelompokkan sebagai hariumau indocina namun tes DNA pada 2004 menunjukkan mereka subspesies yang berbeda", R.drawable.malaya));
-        harimaus.add(new Harimau("Harimau Sumatra", "Sumatra",
-                "merupakan subspesia paling kecil yang berkisaran 2,4 meter dan memiliki bulu yang gelap ", R.drawable.sumtra));
+        harimaus.add(new Harimau (ctx.getString(R.string.siberia_nama),ctx.getString(R.string.siberia_asal),
+                ctx.getString(R.string.siberia_deskripsi), R.drawable.siberia));
+        harimaus.add(new Harimau(ctx.getString(R.string.india_nama),ctx.getString(R.string.india_asal),
+                ctx.getString(R.string.india_deskripsi), R.drawable.india));
+        harimaus.add(new Harimau(ctx.getString(R.string.cina_nama),ctx.getString(R.string.cina_asal),
+                ctx.getString(R.string.cina_deskripsi), R.drawable.harimaucinaselatan));
+        harimaus.add(new Harimau(ctx.getString(R.string.indocina_nama),ctx.getString(R.string.indocina_asal),
+                ctx.getString(R.string.indocina_deskripsi), R.drawable.indocian));
+        harimaus.add(new Harimau(ctx.getString(R.string.malaya_nama),ctx.getString(R.string.malaya_asal),
+                ctx.getString(R.string.malaya_deskripsi), R.drawable.malaya));
+        harimaus.add(new Harimau(ctx.getString(R.string.sumatra_nama),ctx.getString(R.string.sumatra_asal),
+                 ctx.getString(R.string.sumatra_deskripsi), R.drawable.sumtra));
 
         return harimaus;
     }
 
     private static List<Kupu> initDataIkan(Context ctx) {
         List<Kupu> kupus = new ArrayList<>();
-        kupus.add(new Kupu("bidadari","sulawesi",
-                "kupu-kupu raja adalah jenis kupu-kupu yang termasukke dalam famili danaidae", R.drawable.kupubidadari));
-        kupus.add(new Kupu("raja melayu", "Asia tenggara",
-                "kupu jenis ini merupakan kupu-kupu yang tersebar diasia tenggara", R.drawable.rajakalimantan));
-        kupus.add(new Kupu("trogon", "Sumatra",
-                "Merupakan  jenis kupu dari ordo lepidoptera. endemik regional. sebarannya hanay dipulau kalimantan", R.drawable.rajamiranda));
-        kupus.add(new Kupu("kaiser-i-hind","India",
-                "nama umum scara harfiah berarti(kaisar india). kaiser i handa banyak dicari oleh para kolektor Kupu-Kupu karena keindahan dan kelangkaannya", R.drawable.kaisarihand));
-        kupus.add(new Kupu("raja miranda","sumatra",
-                "raja miranda merupakan spesies kupu-kupu besar yang dosebut dengan Common Birdwing", R.drawable.rajamiranda));
-        kupus.add(new Kupu("rajakalimantan","kalimantan",
-                "roides cuneifera adalah kupu-kupu yang masuk dalam kelompok kupu-kupu ekor layang-layang yang ditemukan di Thailand, semenanjung malaya, sumatra, jawa dan kalimantan", R.drawable.rajakalimantan));
+        kupus.add(new Kupu(ctx.getString(R.string.bidadari_nama),ctx.getString(R.string.bidadari_asal),
+                ctx.getString(R.string.bidadari_deskripsi), R.drawable.kupubidadari));
+        kupus.add(new Kupu(ctx.getString(R.string.melayu_nama),ctx.getString(R.string.melayu_asal),
+                ctx.getString(R.string.melayu_deskripsi), R.drawable.rajakalimantan));
+        kupus.add(new Kupu(ctx.getString(R.string.trogon_nama),ctx.getString(R.string.trogon_asal),
+                ctx.getString(R.string.trogon_deskripsi), R.drawable.rajamiranda));
+        kupus.add(new Kupu(ctx.getString(R.string.hind_nama),ctx.getString(R.string.hind_asal),
+                ctx.getString(R.string.hind_deskripsi), R.drawable.kaisarihand));
+        kupus.add(new Kupu(ctx.getString(R.string.miranda_nama),ctx.getString(R.string.miranda_asal),
+                ctx.getString(R.string.mirand_deskripsi), R.drawable.rajamiranda));
+        kupus.add(new Kupu(ctx.getString(R.string.kalimantan_nama),ctx.getString(R.string.kalimantan_asal),
+                ctx.getString(R.string.kalimantan_deskripsi), R.drawable.rajakalimantan));
 
         return kupus;
     }
 
     private static List<Singa>initDataBurung(Context ctx) {
         List<Singa> singas = new ArrayList<>();
-        singas.add(new Singa("Singa Katanga", "Afrika",
-                "Singa ketanga termasuk singa besar dengan berat bisa mencapai 280 kilogram", R.drawable.katanga));
-        singas.add(new Singa("Singa Kongo", "Kongo ",
-                "memiliki panjang sekitar 2,5 meter dan berat 150kg", R.drawable.kongo));
-        singas.add(new Singa("Singa Transvaal", "Afrika Selatan",
-                "singa afrika ini adalah variates dari bagian selatan afrika dan dianggap masih saudara dengan singa ketanga ", R.drawable.transsval1));
-        singas.add(new Singa("Singa Barbary", "Afrika",
-                "Merupakan singa yang punah sekirat 1942, namun subspesiesmen dapat dilihat di kebun binatang", R.drawable.barbary));
-        singas.add(new Singa("Singa Afrika Timur", "Afrika Timur",
-                "memiliki erat sekitar 150 sampai 200kg dan oejantan memiliki surai lebih gelap", R.drawable.afrikatimur));
-        singas.add(new Singa("Singa Asia", "india",
-                "merupakan satwa asli india dan juga terncam punah karena kurangnya habitat mereka ", R.drawable.asia));
+        singas.add(new Singa(ctx.getString(R.string.katanga_nama),ctx.getString(R.string.katanga_asal),
+                ctx.getString(R.string.katanga_deskripsi), R.drawable.katanga));
+        singas.add(new Singa(ctx.getString(R.string.kongo_nama),ctx.getString(R.string.kongo_asal),
+                ctx.getString(R.string.kongo_deskripsi), R.drawable.kongo));
+        singas.add(new Singa(ctx.getString(R.string.transvaal_nama),ctx.getString(R.string.transvaal_asal),
+                ctx.getString(R.string.transvaal_deskripsi), R.drawable.transsval1));
+        singas.add(new Singa(ctx.getString(R.string.barbary_nama),ctx.getString(R.string.barbary_asal),
+                ctx.getString(R.string.barbary_deskripsi), R.drawable.barbary));
+        singas.add(new Singa(ctx.getString(R.string.afrikatimur_nama),ctx.getString(R.string.afrikatimur_asal),
+                ctx.getString(R.string.afrikatimur_deskripsi), R.drawable.afrikatimur));
+        singas.add(new Singa(ctx.getString(R.string.asia_nama),ctx.getString(R.string.asia_asal),
+                ctx.getString(R.string.asia_deskripsi), R.drawable.asia));
 
         return singas;
     }

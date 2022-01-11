@@ -21,7 +21,7 @@
             android:layout_marginTop="2dp"
             android:fontFamily="sans-serif-condensed-medium"
             android:textSize="30dp"
-            android:text=" Biodata" />
+            android:text="@string/biodata_saya" />
 
     </LinearLayout>
 
@@ -55,7 +55,7 @@
             android:id="@+id/nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nama : LALU ANDIKA JIAN FARIZI"
+            android:text="@string/nama_saya"
             android:textColor="@color/design_default_color_primary_dark"
             android:textSize="17sp"
             />
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:textStyle="italic"
             android:textColor="@color/design_default_color_primary_dark"
-            android:text="Alamat : KERONGKONG" />
+            android:text="@string/alamata" />
         <TextView
             android:id="@+id/nim"
             android:layout_marginTop="8dp"
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/design_default_color_primary_dark"
             android:gravity="center"
-            android:text="Prodi : Teknik Informatika" />
+            android:text="@string/Prodi" />
         <TextView
             android:id="@+id/Hobi"
             android:layout_marginTop="8dp"
@@ -91,7 +91,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/design_default_color_primary_dark"
             android:gravity="center"
-            android:text="Hobi : Hiking/Naik Gunung" />
+            android:text="@string/hobi" />
 
     </LinearLayout>
 

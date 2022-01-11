@@ -12,7 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
 
+import simple.example.hewanpedia.model.Harimau;
 import simple.example.hewanpedia.model.Hewan;
+import simple.example.hewanpedia.model.Kupu;
+import simple.example.hewanpedia.model.Singa;
 
 public class DaftarHewanActivity extends AppCompatActivity {
     public final static String HEWAN_TERPILIH ="hewan_obj_key";
@@ -28,6 +31,16 @@ public class DaftarHewanActivity extends AppCompatActivity {
         TextView txJudul = findViewById(R.id.text_title_daftar);
         txJudul.setText("DAFTAR BERBAGAI RAS "+jenisHewan.toUpperCase());
         hewans = DataProvider.getHewansByTipe(this,jenisHewan);
+        TextView txJudulList = findViewById(R.id.text_title_daftar);
+        String judul="";
+        if (hewans.get(0) instanceof Harimau) {
+            judul = getString(R.string.harimau_list_title);
+        } else if (hewans.get(0) instanceof Singa) {
+            judul = getString(R.string.singa_list_title);
+        }else if (hewans.get(0) instanceof Kupu) {
+            judul = getString(R.string.kupu_list_title);
+        }
+        txJudulList.setText(judul);
         setupListView();
     }
 
