@@ -8,3 +8,5 @@ Contoh aplikasi android sederhana  mendemonstrasikan:
 
 
 
+![gif1](https://user-images.githubusercontent.com/95690464/149119662-8d54f9c8-aa60-40ee-b3b3-84fe5a46ccbd.gif)
+![gif2](https://user-images.githubusercontent.com/95690464/149119672-fb6eebdb-302f-4ff9-a52d-4b077d06450c.gif)
